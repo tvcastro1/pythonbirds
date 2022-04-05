@@ -51,7 +51,7 @@ class Fase():
 
         :param porcos:
         """
-        self._obstaculos.extend(porcos)
+        self._porcos.extend(porcos)
 
     def adicionar_passaro(self, *passaros):
         """
@@ -59,7 +59,7 @@ class Fase():
 
         :param passaros:
         """
-        self._obstaculos.extend(passaros)
+        self._passaros.extend(passaros)
 
     def status(self):
         """
@@ -73,7 +73,7 @@ class Fase():
 
         :return:
         """
-        return EM_ANDAMENTO
+        return VITORIA
 
     def lancar(self, angulo, tempo):
         """
